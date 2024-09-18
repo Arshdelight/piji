@@ -1,0 +1,19 @@
+{
+    "Update": {
+        "CheckUpdateAtStartUp": true
+    },
+    "MainWindow": {
+        "DpiScale": "Auto",
+        "Language": "Auto",
+        "MicaEnabled": true
+    },
+    "StartWindow": {
+        "imagej_memory": 16,
+        "imagej_path": "D:/Software/Manual/Fiji",
+        "java_path": "D:/Software/Manual/Fiji/java/win64/zulu8.60.0.21-ca-fx-jdk8.0.322-win_x64/jre"
+    },
+    "QFluentWidgets": {
+        "ThemeColor": "#ff8800ff",
+        "ThemeMode": "Auto"
+    }
+}
