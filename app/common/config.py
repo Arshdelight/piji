@@ -38,8 +38,8 @@ class Config(QConfig):
 
     # StartWindow
     imagej_memory = ConfigItem("StartWindow","imagej_memory", 8)
-    imagej_path = ConfigItem("StartWindow", "imagej_path","D:/Software/Analysis/Fiji", FolderValidator())
-    java_path = ConfigItem("StartWindow","java_path", "D:/Software/Programming/jdk22", FolderValidator())
+    imagej_path = ConfigItem("StartWindow", "imagej_path","", FolderValidator())
+    java_path = ConfigItem("StartWindow","java_path", "", FolderValidator())
 
 
     # MainWindow
