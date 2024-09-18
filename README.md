@@ -10,7 +10,7 @@ Piji是一款可以更便捷使用Pyimagej的GUI, Piji的本体内容持续开�
 建议安装Anaconda或者Miniconda。  
 以下命令中“<>”的内容都需要根据需要替换。  
 ## 下载本仓库或git clone
-[下载](https://github.com/Arshdelight/piji/archive/refs/heads/main.zip)。
+[下载](https://github.com/Arshdelight/piji/archive/refs/heads/main.zip)
 ## 创建虚拟环境并进入
 ```powershell
 conda create -n <envname> python=3.8
