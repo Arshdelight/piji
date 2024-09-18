@@ -114,9 +114,10 @@ class PijiUnits:
 
             # 将每个其它图片的路径和名称赋值到最后一个新加的 pu unit
             for other_image_path in other_images:
-                other_image_name = os.path.basename(other_image_path)
+                other_image_name = other_image_name = os.path.splitext(os.path.basename(other_image_path))[0]
                 # 将图片名称和路径作为属性添加到最后一个 pu unit
                 setattr(self.list[-1], other_image_name, other_image_path)
+                # print(f'Setting other image: {other_image_name} = {other_image_path}') # 测试用
         self.AutoInit()     
     
     def AutoAdd(self):
