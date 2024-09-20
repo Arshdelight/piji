@@ -1,5 +1,5 @@
 # Piji
-Piji是一款可以更便捷使用Pyimagej的GUI, Piji的本体内容持续开源  
+Piji是一款可以更便捷使用Pyimagej的GUI
 试行版，本仓库及软件本身暂且针对中国地区做优化，国际化开发会在后续跟进。可关注b站账户https://space.bilibili.com/3546758690900309  
 目前没有打包版本，请先使用python虚拟环境运行piji，后续也未必有打包版本，因为目前我认为不打包版本可以提供更好的拓展性。不过我还不是很熟悉打包，也许打包也能保证python的包拓展性。  
 很多功能没写，特别是设置页面里的检查更新、feedback等等，请先不要使用，直至正式版发布  
@@ -8,7 +8,6 @@ Piji是一款可以更便捷使用Pyimagej的GUI, Piji的本体内容持续开�
 
 # 使用指南
 建议安装Anaconda或者Miniconda。  
-以下命令中“<>”的内容都需要根据需要替换。  
 ## 下载本仓库或git clone
 [下载](https://github.com/Arshdelight/piji/archive/refs/heads/main.zip)
 ## 创建虚拟环境并进入
