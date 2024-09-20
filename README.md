@@ -11,7 +11,7 @@ Piji是一款可以更便捷使用Pyimagej的GUI
 ## 下载本仓库或git clone
 [下载](https://github.com/Arshdelight/piji/archive/refs/heads/main.zip)
 ## 创建虚拟环境并进入
-考虑到要使用celllpose，请使用python3.8
+考虑到要使用cellpose，请使用python3.8
 ```powershell
 conda create -n piji python=3.8
 conda activate piji
