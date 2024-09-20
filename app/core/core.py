@@ -95,12 +95,31 @@ class PijiUnits:
             txt_files = glob(os.path.join(subdir_path, 'parabus*.txt'))
             # 按时间戳排序，确保顺序正确
             txt_files.sort()
+            # # 依次读取每个 txt 文件中的 JSON 并赋值
+            # for txt in txt_files:
+            #     with open(txt, 'r') as file:
+            #         parabus = json.load(file)
+            #     for key, value in parabus.items():
+            #         setattr(self.list[-1], key, value)
             # 依次读取每个 txt 文件中的 JSON 并赋值
             for txt in txt_files:
-                with open(txt, 'r') as file:
-                    parabus = json.load(file)
-                for key, value in parabus.items():
-                    setattr(self.list[-1], key, value)
+                with open(txt, 'r', encoding='utf-8') as file:  # 确保使用 UTF-8 编码
+                    try:
+                        # 打印当前文件名
+                        # print(f"正在处理文件: {txt}")
+                        # 读取并打印文件内容
+                        content = file.read()
+                        # print(f"文件内容: {content}")
+                        # 尝试加载 JSON
+                        parabus = json.loads(content)
+                    except json.JSONDecodeError as e:
+                        # 如果解析失败，打印错误信息和文件名
+                        print(f"JSON 解析错误: {e}，文件名: {txt}")
+                        continue  # 跳过这个文件，继续处理下一个文件
+                    
+                    # 将解析后的 JSON 数据赋值到对象属性中
+                    for key, value in parabus.items():
+                        setattr(self.list[-1], key, value)
         
 
             # 查找目录中所有其它图片的路径和名称
